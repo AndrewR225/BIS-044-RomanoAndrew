@@ -15,3 +15,5 @@ theDF$x[3]
 names(theDF)<-c("Popularity", "Team Strength", "Sport")
 cat("The standard deviation of Team Strength is: ", "\n")
 sd(theDF$`Team Strength`)
+
+#50/50
