@@ -23,6 +23,8 @@ summary(Yellow_Sample)
 summary(Yellow_Sample $ trip_distance)
 #
 # Cleaning trip distance
-Yellow_Sample <- Yellow_Sample[which(Yellow_Sample$trip_distance>=0 & Yellow_Sample$trip_distance<=10),]
-summary(Yellow_Sample $ trip_distance)
+Yellow_Sample <- Yellow_Sample[which(Yellow_Sample$trip_distance>0 & Yellow_Sample$trip_distance<10),]
+summary(Yellow_Sample$trip_distance)
 summary(Yellow_Sample$total_amount)
+cat('The mean value for trip distance is', round(mean(Yellow_Sample$trip_distance), digits = 2),'miles')
+cat('The mean value for total cost is', round(mean(Yellow_Sample$total_amount), digits = 2),'dollars')
