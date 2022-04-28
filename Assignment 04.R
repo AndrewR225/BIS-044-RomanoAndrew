@@ -36,3 +36,4 @@ DF$Title <- replace(DF$Title,DF$Title=="Justice of the Peace, Parishwide","Justi
 DF$Title <- replace(DF$Title,DF$Title=="Mayor-President","Mayor")
 
 View(count(DF,DF$Title))
+#100/100
